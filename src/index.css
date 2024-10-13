@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/index.css or src/app/globals.css */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
 body {
   margin: 0;
   padding: 0;
