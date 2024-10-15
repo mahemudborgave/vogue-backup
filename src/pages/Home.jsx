@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import MainSlider from "../components/MainSlider";
 import Categories from '../components/Categories';
 import Trending from '../components/Trending';
+import SiteInsights from '../components/SiteInsights';
 function Home() { 
     return (
         <>
@@ -11,6 +12,7 @@ function Home() {
             <MainSlider/>
             <Categories/>
             <Trending/>
+            <SiteInsights/>
             </div>
         </>
     );
