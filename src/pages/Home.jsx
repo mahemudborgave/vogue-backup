@@ -4,6 +4,7 @@ import MainSlider from "../components/MainSlider";
 import Categories from '../components/Categories';
 import Trending from '../components/Trending';
 import SiteInsights from '../components/SiteInsights';
+import Reviews from '../components/Reviews';
 function Home() { 
     return (
         <>
@@ -13,6 +14,7 @@ function Home() {
             <Categories/>
             <Trending/>
             <SiteInsights/>
+            <Reviews/>
             </div>
         </>
     );
