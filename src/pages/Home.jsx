@@ -5,6 +5,7 @@ import Categories from '../components/Categories';
 import Trending from '../components/Trending';
 import SiteInsights from '../components/SiteInsights';
 import Reviews from '../components/Reviews';
+import Footer from '../components/Footer';
 function Home() { 
     return (
         <>
@@ -15,6 +16,7 @@ function Home() {
             <Trending/>
             <SiteInsights/>
             <Reviews/>
+            <Footer/>
             </div>
         </>
     );
