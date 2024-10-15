@@ -38,10 +38,10 @@ export default function Carousel({ slides }) {
 
       <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center px-5 text-dark-green text-4xl">
         <button onClick={previousSlide}>
-          <FaArrowCircleLeft />
+          <FaArrowCircleLeft className="opacity-80"/>
         </button>
         <button onClick={nextSlide}>
-          <FaArrowCircleRight />
+          <FaArrowCircleRight className="opacity-80"/>
         </button>
       </div>
     </div>
