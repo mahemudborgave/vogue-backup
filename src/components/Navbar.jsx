@@ -16,21 +16,21 @@ function Navbar() {
             </div>
 
             {/* Main Content */}
-            <div className='flex flex-col md:items-center md:justify-between ml-4 mt-1 lg:ml-10 '>
+            <div className='flex flex-col md:items-center md:justify-between ml-4 mt-0 lg:ml-10 '>
                 {/* Logo Section */}
                 <div className='flex-1 flex mt-3'>
-                    <img src="/VOGUE_PRISM _black.png" alt="VOGUE_PRISM" className='w-24 mt-2' />
+                    <img src="/VOGUE_PRISM _black.png" alt="VOGUE_PRISM" className='w-24 mt-0' />
                 </div>
 
                 {/* Desktop Navigation */}
-                <div className='hidden md:flex flex-1 justify-around w-full mt-5 tracking-wide'>
+                <div className='hidden md:flex flex-1 justify-around w-full mt-2 tracking-wide'>
                     <div className='flex space-x-4'>
                         <FaFacebook className="icon-outline" size={24} />
                         <FaTwitter className="icon-outline" size={24} />
                         <FaYoutube className="icon-outline" size={24} />
                         <FaInstagram className="icon-outline" size={24} />
                     </div>
-                    <div className='flex space-x-4 text-lg font-bold gap-5'>
+                    <div className='flex space-x-4 text-md font-bold gap-5'>
                         <a className='hover:text-green-700 cursor-pointer'>HOME</a>
                         <a className='hover:text-green-700 cursor-pointer'>CATEGORIES</a>
                         <a className='hover:text-green-700 cursor-pointer'>PRODUCTS</a>

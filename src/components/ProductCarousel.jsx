@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 
-export default function Carousel({ slides }) {
+export default function ProductCarousel({ slides }) {
   const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
@@ -13,7 +13,7 @@ export default function Carousel({ slides }) {
   };
 
   return (
-    <div className="relative overflow-hidden w-full lg:h-full h-80   flex items-center">
+    <div className="relative overflow-hidden w-[50%] lg:h-full h-80 flex items-center">
       <div
         className="flex transition-transform ease-out duration-1000"
         style={{
@@ -22,26 +22,25 @@ export default function Carousel({ slides }) {
         }}
       >
         {slides.map((slide, index) => (
-            <div
+          <div
             key={index}
-            className="w-full flex justify-center  flex-shrink-0 items-center" // Center each image horizontally
+            className="w-full flex justify-center items-center flex-shrink-0"
           >
-          <img
-            key={index}
-            src={slide}
-            alt={`Slide ${index}`}
-            className="w-full object-contain h-96"
-          />
+            <img
+              src={slide}
+              alt={`Slide ${index}`}
+              className="w-full object-contain h-96"
+            />
           </div>
         ))}
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center px-5 text-dark-green text-4xl">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-16 text-4xl">
         <button onClick={previousSlide}>
-          <FaArrowCircleLeft className="opacity-80"/>
+          <FaArrowCircleLeft className="opacity-80 text-gray-300" />
         </button>
         <button onClick={nextSlide}>
-          <FaArrowCircleRight className="opacity-80"/>
+          <FaArrowCircleRight className="opacity-80 text-gray-300" />
         </button>
       </div>
     </div>
