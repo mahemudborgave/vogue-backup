@@ -6,19 +6,19 @@ import Trending from '../components/Trending';
 import SiteInsights from '../components/SiteInsights';
 import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
-import Product from '../components/Product';
+import Product from './Product';
 function Home() { 
     return (
         <>
             <div className='bg-gray-100 h-full'>
-            {/* <Navbar/>
+             <Navbar/>
             <MainSlider/>
             <Categories/>
             <Trending/>
             <SiteInsights/>
             <Reviews/>
-            <Footer/> */}
-            <Product/>
+            <Footer/> 
+            {/* <Product/> */}
             </div>
         </>
     );

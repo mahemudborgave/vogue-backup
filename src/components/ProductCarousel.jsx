@@ -12,8 +12,10 @@ export default function ProductCarousel({ slides }) {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
+  
+
   return (
-    <div className="relative overflow-hidden w-[50%] lg:h-full h-80 flex items-center">
+    <div className="relative overflow-hidden lg:w-[50%] w-[100%] h-full  flex items-center">
       <div
         className="flex transition-transform ease-out duration-1000"
         style={{
@@ -29,18 +31,27 @@ export default function ProductCarousel({ slides }) {
             <img
               src={slide}
               alt={`Slide ${index}`}
-              className="w-full object-contain h-96"
+              className="w-full object-cover h-full"
             />
           </div>
         ))}
       </div>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-16 text-4xl">
+      <div className="hidden absolute bottom-4 left-1/2 -translate-x-1/2 md:flex gap-16 text-4xl">
         <button onClick={previousSlide}>
           <FaArrowCircleLeft className="opacity-80 text-gray-300" />
         </button>
         <button onClick={nextSlide}>
           <FaArrowCircleRight className="opacity-80 text-gray-300" />
+        </button>
+      </div>
+
+      <div className="md:hidden absolute top-0 left-0 w-full h-full flex justify-between items-center px-5 text-dark-green text-4xl">
+        <button onClick={previousSlide}>
+          <FaArrowCircleLeft className="opacity-80"/>
+        </button>
+        <button onClick={nextSlide}>
+          <FaArrowCircleRight className="opacity-80"/>
         </button>
       </div>
     </div>

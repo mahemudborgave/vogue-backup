@@ -44,12 +44,12 @@ function Navbar() {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className='fixed bg-white inset-0 text-center z-50'>
+                <div className='fixed bg-gray-100 inset-0 text-center z-50'>
                     {/* Logo in Mobile Menu */}
                     
                     <div className='flex justify-end items-center p-4 mt-0'>
                     <div className='flex-1  flex'>
-                    <img src="/VOGUE_PRISM _black.png" alt="VOGUE_PRISM" className='w-24 mt-2' />
+                    <img src="/VOGUE_PRISM _black.png" alt="VOGUE_PRISM" className='w-24 mt-0' />
                      </div>
                         <div className='flex justify-end pr-1'>
                             <FaTimes size={24} onClick={toggleMobileMenu} />
