@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from "./pages/Home";
 import Product from './pages/Product';
+import Products from './pages/Products';
+import AdminMain from './components/AdminMain';
 
 
 
@@ -12,7 +14,7 @@ class App extends Component {
     return (
      <Router>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<AdminMain/>}/>
         <Route path='/product' element={<Product/>}/>
       </Routes>
      </Router>
