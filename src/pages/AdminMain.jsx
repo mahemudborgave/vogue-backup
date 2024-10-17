@@ -5,6 +5,7 @@ import { BiSolidOffer, BiSolidLogOut } from "react-icons/bi";
 import { IoBagAdd } from "react-icons/io5";
 import { RxUpdate } from "react-icons/rx";
 import { FaUserEdit } from "react-icons/fa";
+import AddProduct from "../components/AddProduct";
 
 export default function AdminMain() {
   const [activeTab, setActiveTab] = useState("Dashboard"); // Track the active main tab
@@ -23,7 +24,7 @@ export default function AdminMain() {
     if (activeTab === "Collections") {
       switch (activeCollectionTab) {
         case "Add":
-          return <div className="p-10">Add new items here.</div>;
+          return <AddProduct/>;
         case "Update":
           return <div className="p-10">Update existing items here.</div>;
         case "Delete":
