@@ -80,7 +80,7 @@ export default function AdminMain() {
 
             {/* Collection Sub-Tabs */}
             {showCollectionTabs && (
-              <div className="ml-8 flex flex-col gap-2 text-[12px]">
+              <div className="ml-8 mt-2 flex flex-col gap-2 text-[12px]">
                 <div className="flex gap-3 items-center cursor-pointer" onClick={() => setActiveCollectionTab("Add")}>
                   <IoBagAdd size={16} className="text-dark-green" />
                   <h1 className="whitespace-nowrap">Add</h1>
