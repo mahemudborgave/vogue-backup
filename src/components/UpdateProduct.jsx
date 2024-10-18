@@ -1,11 +1,11 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { BiSolidImageAdd } from "react-icons/bi";
-export default function AddProduct(){
+export default function UpdateProduct(){
     return (
         <div className="h-full w-full">
             <div className="w-full text-center text-[18px] text-gray-700">
-                <h1 className="uppercase font-bold">add new collection</h1>
+                <h1 className="uppercase font-bold">update collection</h1>
             </div>
             
             <div className="flex h-auto">
@@ -119,7 +119,7 @@ export default function AddProduct(){
                         </div>
                     </div>    
                    </div>
-                   <button className="w-full mt-8 font-extrabold bg-dark-green rounded-lg text-white h-8">ADD</button>
+                   <button className="w-full mt-8 font-extrabold bg-dark-green rounded-lg text-white h-8">UPDATE</button>
                 </div>  
             </div>
         </div>

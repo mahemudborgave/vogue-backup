@@ -6,6 +6,7 @@ import { IoBagAdd } from "react-icons/io5";
 import { RxUpdate } from "react-icons/rx";
 import { FaUserEdit } from "react-icons/fa";
 import AddProduct from "../components/AddProduct";
+import UpdateProduct from "../components/UpdateProduct";
 
 export default function AdminMain() {
   const [activeTab, setActiveTab] = useState("Dashboard"); // Track the active main tab
@@ -26,7 +27,7 @@ export default function AdminMain() {
         case "Add":
           return <AddProduct/>;
         case "Update":
-          return <div className="p-10">Update existing items here.</div>;
+          return <UpdateProduct/>;
         case "Delete":
           return <div className="p-10">Delete items here.</div>;
         default:
